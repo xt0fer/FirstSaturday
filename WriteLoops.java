@@ -1,10 +1,14 @@
 import com.sun.org.apache.xpath.internal.SourceTree;
 
+import java.awt.SystemTray;
+import java.util.concurrent.ThreadLocalRandom;
+import java.util.function.Supplier;
+
 /**
  * Writeloops get you thinking about how to do different things with loops.
  *
  * @author kyounger
- * @version 1.1
+ * @version 1.2
  */
 public class WriteLoops {
 
@@ -14,11 +18,9 @@ public class WriteLoops {
         int w = 0;
 
         // Write a FOR loop that counts from 1 to 10.
-        for (int i = 1; i <= 5; i++) {
             // calling
             w = w + 1;
             // each time through the loop
-        }
 
         // this will tell the test how many times the loop executed.
         return w;
@@ -28,11 +30,10 @@ public class WriteLoops {
         int w = 0;
 
         // Write a FOR loop that counts from 1 to 10.
-
         // calling
         w = w + 1;
         // each time through the loop
-
+        
         return w;
     }
 
@@ -40,11 +41,10 @@ public class WriteLoops {
         int w = 0;
 
         // Write a FOR loop that makes 10 iterations, start at 21.
-
         // calling
         w = w + 1;
         // each time through the loop
-
+        
         return w;
     }
 
@@ -52,11 +52,10 @@ public class WriteLoops {
         int w = 0;
 
         // Write a FOR loop that counts down from 100 to 0.
-
         // calling
         w = w + 1;
         // each time through the loop
-
+        
         return w;
     }
 
@@ -64,11 +63,9 @@ public class WriteLoops {
         int w = 0;
 
         // Write a FOR loop from 0 to 32 by 2s.
-
         // calling
         w = w + 1;
         // each time through the loop
-
         return w;
     }
 
@@ -76,11 +73,10 @@ public class WriteLoops {
         int w = 0;
 
         // Write a FOR loop from 1 to less than 5001 by 11s.
-
         // calling
         w = w + 1;
         // each time through the loop
-
+        
         return w;
     }
 
@@ -89,10 +85,9 @@ public class WriteLoops {
 
         // Write a nested FOR loop(s), where one counts from
         // 0 to less than 20 and the inner one counts from 0 to 4
-
-        // calling
-        w = w + 1;
-        // each time through the inner loop
+                // calling
+                w = w + 1;
+                // each time through the inner loop
 
         return w;
     }
@@ -105,10 +100,10 @@ public class WriteLoops {
         // loop index counter and if it’s greater than 51,
         // prints “Hello Zipcode” instead of the statement w = w + 1;
 
-        // calling
-        w = w + 1;
-        // each time through the inner loop
-
+                // calling
+                w = w + 1;
+            // each time through the inner loop
+        
         return w;
     }
 
@@ -138,35 +133,33 @@ public class WriteLoops {
 
         // you need to use a .equals for two Strings.
 
-        // calling
-        w = w + 1;
-        // each time through the inner loop
+            // calling
+            w = w + 1;
+            // each time through the inner loop
+        
 
-        System.out.println("Honey, I’m Home!");
-        return w;
+            return w;
     }
 
     // Getting harder...
     // First declare and set “highestScore” to 236. Then set “currentScore” to
-    // “gameNextScore()”. Then write a WHILE loop that checks “currentScore”
+    // “gameNextScore()”. Then write a WHILE loop that checks "runningScore"
     // is less than “highestScore” and if it is, adds “currentScore” to
     // "runningScore"
     // and then sets “currentScore” to “gameNextScore()”
-    public boolean checkGameScore() {
+    public int checkGameScore() {
         int w = 0;
         int highestScore = 236;
         int currentScore = gameNextScore();
         int runningScore = 0;
 
         // do your while loop here
-
-        // do your ifs here
-
-        // calling
-        w = w + 1;
-        // each time through the inner loop
-
-        return w > 3;
+ 
+            // calling
+            w = w + 1;
+            // each time through the inner loop
+        
+        return w; // >= 3;
     }
 
     // Rewrite the previous WHILE loop as a DO..WHILE loop.
@@ -179,13 +172,11 @@ public class WriteLoops {
 
         // do your while loop here
 
-        // do your ifs here
+            // calling
+            w = w + 1;
+            // each time through the inner loop
 
-        // calling
-        w = w + 1;
-        // each time through the inner loop
-
-        return w > 3;
+        return w >= 3;
     }
 
     // Write a WHILE loop that checks “serverIsRunning()” and if true
@@ -194,11 +185,13 @@ public class WriteLoops {
     // and also calls “tryServerRestart()”
     public int checkServerStatus() {
         int w = 0;
-        String adminPhoneNumber = "+1 202 456 1111"
+        String adminPhoneNumber = "+1 202 456 1111";
+        
+
         // calling
         w = w + 1;
         // each time through the inner loop
-
+        
         return w;
     }
 
@@ -208,19 +201,21 @@ public class WriteLoops {
     public int loop50by7() {
         int w = 0;
 
-        // calling
-        w = w + 1;
-        // each time through the inner loop
 
+            // calling
+            w = w + 1;
+            // each time through the inner loop
+        
         return w;
     }
+
+    int[] threes_array = { 3, 6, 9, 12, 15, 18, 21 };
 
     // Foo is method that add the first 7 factors of three together and prints
     // out the sum of them all.
     public int foo() {
         int w = 0;
         // this is an array of ints. it is of length 7 (from 0 -> 6)
-        int[] threes_array = { 3, 6, 9, 12, 15, 18, 21 };
         int sumOfThrees = 0;
 
         // this is a so called Enhanced for loop
@@ -243,10 +238,11 @@ public class WriteLoops {
         int w = 0;
         int sumOfThrees = 0;
 
-        // calling
-        w = w + 1;
-        // each time through the inner loop
-
+ 
+            // calling
+            w = w + 1;
+            // each time through the inner loop
+        
         System.out.print("The Sum is ");
         System.out.println(sumOfThrees);
 
@@ -259,10 +255,11 @@ public class WriteLoops {
         int w = 0;
         int sumOfThrees = 0;
 
-        // calling
-        w = w + 1;
-        // each time through the inner loop
-
+ 
+            // calling
+            w = w + 1;
+            // each time through the inner loop
+        
         System.out.print("The Sum is ");
         System.out.println(sumOfThrees);
 
@@ -274,34 +271,35 @@ public class WriteLoops {
     // inside the loop, write an IF that checks “yardNeedsMowed” and if true calls
     // “yellAtJuniorToMowLawn()”
     // After loop, call
-    // “sendJuniorBackToSchool(onTime)”
+    // “sendJuniorBackToSchool()” with an argument that decribes the day junior goes
+    // back.
     public int manageYardAndJunior() {
         int w = 0;
         boolean onTime = true;
 
         // ADD YOUR CODE here.
-
-        // be sure to call
-        w = w + 1;
-        // each time inside the loop
-
+ 
+            // be sure to call
+            w = w + 1;
+            // each time inside the loop
+        
         return w;
     }
 
-    String voteTallies[] = { "Lincoln", "Washington", "Adams",
-    "Lincoln", "Washington", "Adams", "Lincoln", "Washington", "Adams",
-    "Lincoln", "Washington", "Adams", "Roosevelt"
-    };
+    String voteTallies[] = { "Lincoln", "Washington", "Adams", "Lincoln", "Washington", "Adams", "Lincoln",
+            "Washington", "Adams", "Lincoln", "Washington", "Adams", "Roosevelt" };
+
     // Given an array voteTallies[], write a FOR loop that prints out each value in
     // the array.
     public int tallyVote1() {
         int w = 0;
         int numberOfVotes = voteTallies.length;
 
-        // calling
-        w = w + 1;
-        // each time through the inner loop
-
+ 
+            // calling
+            w = w + 1;
+            // each time through the inner loop
+        
         return w;
     }
 
@@ -312,10 +310,11 @@ public class WriteLoops {
         int w = 0;
         int numberOfVotes = voteTallies.length;
 
-        // calling
-        w = w + 1;
-        // each time through the inner loop
 
+            // calling
+            w = w + 1;
+            // each time through the inner loop
+        
         return w;
     }
 
@@ -362,19 +361,44 @@ public class WriteLoops {
         return this.scr = this.scr + ThreadLocalRandom.current().nextInt(20, 99 + 1);
     }
 
-    private boolean isSummer = () -> {
-        int i = 0;
-        return () -> {
-            i = i + 1;
-            return (i >= _3);
-        };
-    };
+    private void yellAtJuniorToMowLawn() {
+        /* dammit, mow the yard */}
 
-    private void sendEmergencyText(String mesg, String phone) {}
-    private void tryServerRestart(String mesg, String phone) {}
+    private void sendJuniorBackToSchool(String timeForSchool) {
+        if (!timeForSchool.equalsIgnoreCase("First Day of School")) {
+            throw new IllegalArgumentException();
+        }
+        /* dammit, mow the yard */}
+
+    // private Supplier<Boolean> isSummer = () -> {
+    //     int i = 0;
+    //     return Supplier<Boolean> () -> {
+    //         i = i + 1;
+    //         return (i >= 3);
+    //     };
+    // };
+        private int summer = 0;
+        private boolean isSummer() {
+            if (summer == 3) {
+                return true;
+            }
+            summer++;
+            return false;
+        }
+    private void sendEmergencyText(String mesg, String phone) {
+    }
+
+    private void tryServerRestart(String mesg, String phone) {
+    }
+
     int serverStatus = 5;
-    private boolean serverIsRunning() {return (serverStatus > 20);}
-    private void waitFor(int interval) {serverStatus += interval;}
 
+    private boolean serverIsRunning() {
+        return (serverStatus < 20);
+    }
+
+    private void waitFor(int interval) {
+        serverStatus += interval;
+    }
 
 }
