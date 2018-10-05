@@ -1,3 +1,3 @@
 # First Saturday
 
-see README.TXT
+see [README.TXT](README.TXT).
