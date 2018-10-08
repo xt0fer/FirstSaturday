@@ -9,6 +9,7 @@ import java.util.function.Supplier;
  *
  * @author kyounger
  * @version 1.2
+ * 
  */
 public class WriteLoops {
 
