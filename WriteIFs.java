@@ -39,7 +39,14 @@ public class WriteIFs
 
     }
 
-   // instance variables - replace the example below with your own
+
+    
+    /**
+     *  Pay no attention to the code below this point.
+     * 
+     * 
+     * instance variables
+     * / 
    int x;
    int tt_t;
    int tt_s;

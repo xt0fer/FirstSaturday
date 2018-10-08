@@ -7,8 +7,8 @@ import java.util.function.Supplier;
 /**
  * Writeloops get you thinking about how to do different things with loops.
  *
- * @author kyounger
- * @version 1.2
+ * @author anonymous coward
+ * @version -0.3
  * 
  */
 public class WriteLoops {

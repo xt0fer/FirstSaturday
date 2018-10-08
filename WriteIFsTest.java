@@ -8,8 +8,8 @@ import org.junit.Test;
 /**
  * The test class WriteIFsTest.
  *
- * @author  (your name)
- * @version (a version number or a date)
+ * @author  kyounger
+ * @version 1.2
  */
 public class WriteIFsTest
 {
