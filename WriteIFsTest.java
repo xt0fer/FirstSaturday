@@ -65,20 +65,47 @@ public class WriteIFsTest
         assertEquals("cooling", writeIFs1.thermoSTAT(81));
     }
     @Test
-    public void TestCheckFuel()
+    public void TestCheckFuel1()
     {
         WriteIFs writeIFs1 = new WriteIFs();
-        writeIFs1.playerDied(true);
-        assertEquals("Game Over!", writeIFs1.ss);
+        writeIFs1.checkFuel(_0_5);
+        assertEquals(0, writeIFs1.x);
+    }
+    @Test
+    public void TestCheckFuel2()
+    {
+        WriteIFs writeIFs1 = new WriteIFs();
+        writeIFs1.checkFuel(_0_04);
+        assertEquals(99, writeIFs1.x);
     }
     @Test
     public void TestFireControl()
     {
         WriteIFs writeIFs1 = new WriteIFs();
-        writeIFs1.checkFuel(_0_5);
-        assertEquals(0, writeIFs1.x);
-        writeIFs1.checkFuel(_0_04);
-        assertEquals(99, writeIFs1.x);
+        Object oo = new Object();
+        writeIFs1.tt_s = 1;
+        writeIFs1.fireplaceControl(oo);
+        assertEquals(213, writeIFs1.tt_s);
+    }
+    @Test
+    public void TestFireControl2()
+    {
+        WriteIFs writeIFs1 = new WriteIFs();
+        Object oo = new Object();
+        writeIFs1.oo1 = 65;
+        writeIFs1.tt_s = 1;
+        writeIFs1.fireplaceControl(oo);
+        assertEquals(213, writeIFs1.tt_s);
+    }
+    @Test
+    public void TestFireControl3()
+    {
+        WriteIFs writeIFs1 = new WriteIFs();
+        Object oo = new Object();
+        writeIFs1.oo2 = 80;
+        writeIFs1.tt_s = 1;
+        writeIFs1.fireplaceControl(oo);
+        assertEquals(213, writeIFs1.tt_s);
     }
 
 }

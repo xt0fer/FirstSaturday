@@ -25,9 +25,11 @@ public class WriteIFs
     }
 
     public void fireplaceControl(Object fireplace1) {
-        // Write an IF statement that checks “outsideTemp()” 
-        // is less than 50 AND “insideTemp()” 
-        // is less than 62, calls “startAFire(fireplace1)”
+        // Write an IF statement that checks 
+        // “outsideTemp()” is less than 50 
+        // AND 
+        // “insideTemp()” is less than 62, 
+        // calls “startAFire(fireplace1)”
 
     }
 
@@ -41,6 +43,7 @@ public class WriteIFs
    int x;
    int tt_t;
    int tt_s;
+   int oo1, oo2;
    String ss;
 
 
@@ -54,6 +57,8 @@ public class WriteIFs
       tt_t = 0;
       tt_s = 1;
       ss = "";
+      oo1 = 61;
+      oo2 = 49;
   }
 
     // associated routines
@@ -71,10 +76,10 @@ public class WriteIFs
     }
  
     private int insideTemp() {
-        return 61;
+        return oo1;
     }
     private int outsideTemp() {
-        return 49;
+        return oo2;
     }
     private void startAFire(Object o) {
         this.tt_s = 213;
